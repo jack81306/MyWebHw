@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script type="text/javascript" src="index.js">	</script>
+	</head>
+	<body onload="loadi()">
+		<audio id="aud" autoplay loop>
+			<source src="music/2.mp3" type="audio/mpeg">
+		</audio>
+		<div id="mainImg">
+			<div id="menu">
+				<input id="btn1" type="button" value="換歌" onclick="changemusic()"></input>
+				<input id="btn2" type="button" value="STOP!" onclick="stopmusic()"></input>
+				<div id="turnImg">
+					<span style="position:relative;left:10%;font-size:20px;">輪播間隔:</span><input id="changeTime" type="text"></input>
+					<br>
+					<input id="startTurn" type="button" value="開始輪播!" onclick="turnStart()"></input>
+					<br>
+					<input id="stopTurn" type="button" value="停止輪播!" onclick="turnStop()"></input>
+					<form action="index.html">
+						<input type="submit" id="toPriview" value="預覽模式"></input>
+					</form>
+				</div>
+			</div>
+			<div id="innerImg">
+				<img id="0" src="img/0.jpg">
+			</div>
+			<div id="downIcon">
+				<a href="img/0.jpg" download><img src="icon/download.png"></a>
+			</div>
+		</div>
+		<div id="controlImg">
+			<div id="leftarrow">
+				<img src="icon/leftarrow.png" onclick="move('-1')" style="max-width:80%;right:0;left:0;top:0;bottom:0;margin:auto;position:absolute;">
+			</div>
+			<div id="preImg">
+			</div>
+			<div id="rightarrow">
+				<img src="icon/rightarrow.png" onclick="move('1')" style="max-width:80%;right:0;left:0;top:0;bottom:0;margin:auto;position:absolute;">
+			</div>
+		</div>
+	</body>
+</html>

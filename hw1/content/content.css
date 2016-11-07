@@ -1,0 +1,31 @@
+body
+{
+	background-color:rgba(0,0,0,0);
+}
+#paper
+{
+	position:fixed;
+	height:100%;
+	width:80%;
+	margin:auto;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-image:url("paper.png");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100% 100%;
+}
+
+#inpaper
+{
+	text-align:center;
+	
+}
+
+@font-face
+{
+	font-family:shinsu;
+	src:url('../menu/wt071.ttf');
+}

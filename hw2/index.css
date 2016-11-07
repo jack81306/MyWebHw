@@ -1,0 +1,209 @@
+#mainImg
+{
+	position:absolute;
+	width:100%;
+	height:85%;
+	top:0;
+}
+
+#innerImg
+{
+	width:60%;
+	height:100%;
+	position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+
+#innerImg img
+{
+	display:block;
+	position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+	height:100%;
+	width:100%;
+}
+
+#preImg
+{
+	white-space:nowrap;
+	position:absolute;
+	left:0;
+	right:0;
+	margin:auto;
+	width:90%;
+	height:100%;
+	bottom:0;
+	overflow:hidden;
+}
+
+#controlImg
+{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:15%;
+}
+
+#leftarrow
+{
+	position:absolute;
+	height:100%;
+	bottom:0;
+	width:5%;
+}
+
+#rightarrow
+{
+	position:absolute;
+	bottom:0;
+	height:100%;
+	width:5%;
+	right:0;
+}
+
+#preImg img
+{	
+	max-height:90%;
+	display:inline-block;
+	position:relative;
+	top:10%;
+	vertical-align:top;
+	transition:top 0.2s,max-height 0.2s;
+	margin:0;
+}
+
+#preImg img:hover
+{
+	position:relative;
+	top:0;
+	vertical-align:top;
+	max-height:100%;
+}
+
+#downIcon
+{
+	position:absolute;
+	right:0;
+	height:100%;
+	width:20%;
+	overflow:hidden;
+}
+
+#downIcon img
+{
+	position:absolute;
+	right:0;
+	left:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+	max-height:70%;
+	max-width:70%;
+}
+
+#menu
+{
+	position:absolute;
+	width:20%;
+	height:100%;
+}
+
+#btn1
+{
+	position:absolute;
+	top:10%;
+	left:10%;
+	height:6%;
+	width:30%;
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    border-radius: 8px; 
+}
+
+#btn2
+{
+	position:relative;
+	top:10%;
+	left:60%;
+	height:6%;
+	width:30%;
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    border-radius: 8px; 
+}
+
+#changeTime
+{
+	position:relative;
+	left: 15%;
+	height: 24px;
+	width: 40%;
+}
+
+#turnImg
+{
+	position:absolute;
+	top:25%;
+	height:100%
+}
+
+#startTurn
+{
+	position:absolute;
+	left: 25%;
+	top:10%;
+	height:6%;
+	width: 40%;
+	padding:5px 15px;
+	background:#ccc;
+	border:0 none;
+	cursor:pointer;
+	border-radius: 8px;
+}
+
+#stopTurn
+{
+	position:absolute;
+	left: 25%;
+	top:18%;
+	height:6%;
+	width: 40%;
+	padding:5px 15px;
+	background:#ccc;
+	border:0 none;
+	cursor:pointer;
+	border-radius: 8px;
+}
+
+#toPriview
+{
+	position:absolute;
+	left: 25%;
+	top:26%;
+	height:6%;
+	width: 40%;
+	padding:5px 15px;
+	background:#ccc;
+	border:0 none;
+	cursor:pointer;
+	border-radius: 8px;
+}
+
+body
+{
+	margin:0;
+	background-image:url("img/background.jpg");
+	background-size:100% 100%;
+}

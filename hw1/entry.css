@@ -1,0 +1,120 @@
+
+
+#tree
+{
+	max-width:100%;
+	max-height:100%;
+	animation:treeanimax 3s;
+}
+#tree:hover
+{
+	opacity:0.6;
+}
+
+#tree:focus
+{
+	outline:none;
+}
+
+
+#treediv
+{
+	width: 200px;
+    height: 200px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+	z-index:9999;
+}
+
+#lefttree img
+{
+	opacity:0;
+	max-height:100%;
+	max-width:60%;
+	animation:ramanimax 3s;
+	animation-fill-mode:forwards;
+	animation-delay: 1s;
+}
+
+#lefttree
+{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	overflow:hidden;
+	animation:ramdivanimax 3s;
+	animation-delay: 1s;
+}
+
+#righttree
+{
+	position:absolute;
+	overflow:hidden;
+	bottom:0px;
+	right:0px;
+	animation:remdivanimax 3s;
+	animation-delay: 2s;
+}
+
+#righttree img
+{
+	opacity:0;
+	max-width:60%;
+	min-height:100%;
+	float:right;
+	animation:ramanimax 3s;
+	animation-fill-mode:forwards;
+	animation-delay: 2s;
+}
+
+body
+{
+	background-color:#D9AC7E;
+}
+
+@keyframes remdivanimax
+{
+	0%{right:-20%;}
+	100%{right:0%;}
+}
+
+
+@keyframes ramdivanimax
+{
+	0%{left:-20%;}
+	100%{left:0%;}
+}
+
+@keyframes ramanimax
+{
+	0%{opacity:0;}
+	100%{opacity:1;}
+}
+
+@keyframes treeanimax
+{
+	0%{opacity:0;}
+	100%{opacity:1;}
+}
+
+@keyframes treedisapear
+{
+	0%{opacity:1;}
+	100%{opacity:0;}
+}
+
+@keyframes ltreedisapear
+{
+	0%{left:0%;opacity:1;}
+	100%{left:-30%;opacity:0;}
+}
+
+@keyframes rtreedisapear
+{
+	0%{right:0%;opacity:1;}
+	100%{right:-30%;opacity:0;}
+}

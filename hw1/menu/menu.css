@@ -1,0 +1,151 @@
+html,body
+{
+	margin:0;
+	padding:0;
+	height: 100%; 
+	border:none; 
+}
+
+
+@font-face
+{
+	font-family:shinsu;
+	src:url('wt071.ttf');
+}
+
+#all
+{
+	height:100%;
+	width:100%;
+}
+
+#all img
+{
+	height:100%;
+	width:100%;
+	z-index:-9999;
+	animation:bganimax 3s;
+}
+
+#tbl
+{
+	float:left;
+	position:absolute;
+	left:10%;
+	top:10%;
+	border-collapse:collapse;
+	width:25%;
+	height:80%;
+}
+td,tr
+{
+	text-align:center;
+	font-family:shinsu;
+	font-size:35px;
+}
+
+td>a
+{
+	position:relative;
+	left:0%;
+	margin:0;
+	padding-top:2%;
+	padding-bottom:2%;
+	animation:tdanimax 3s;
+	opacity:0;
+	animation-fill-mode:forwards;
+}
+
+td>a:hover
+{
+	 text-shadow: 2px 2px 6px #000000;
+}
+
+a:link
+{
+	color:black;
+	text-decoration: none;
+}
+
+a:visited
+{
+	color:black;
+	text-decoration: none;
+}
+
+#contentfr
+{
+	border-style:none;
+	position:absolute;
+	right:0;
+	bottom:0;
+	width:60%; 
+	height:100%;
+	animation:ifanimax 2s;
+}
+
+#p1{
+	animation-delay:0.3s;
+}
+
+#p2{
+	animation-delay:0.6s;
+}
+
+#p3{
+	animation-delay:0.9s;
+}
+
+#p4{
+	animation-delay:1.2s;
+}
+
+#p5{
+	animation-delay:1.5s;
+}
+
+@keyframes tdanimax
+{
+	0%{
+		left:-20%;
+		opacity:0;
+	}
+	100%{
+		left:0%;
+		opacity:1;
+	}
+}
+
+@keyframes ifanimax
+{
+	0%
+	{
+		bottom:20%;
+		opacity:0;
+	}
+	100%
+	{
+		bottom:0;
+		opacity:1;
+	}
+}
+
+@keyframes ifoutanimax
+{
+	0%
+	{
+		top:0;
+		opacity:1;
+	}
+	100%
+	{
+		top:20%;
+		opacity:0;
+	}
+}
+
+@keyframes bganimax
+{
+	0%{opacity:0;}
+	100%{opacity:1;}
+}
